@@ -44,7 +44,9 @@ require([
         url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/4pm_parcel_dots_8_1_19/FeatureServer",
         outFields: ["*"],
         popupTemplate: template
-      });
+      }); 
+        
+        map.add(parcels_4pm);
   
   var parcels10_4pm = new FeatureLayer({
         url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/ten_person_parcels_4pm/FeatureServer"
@@ -60,12 +62,8 @@ require([
   parcels10_4pm.renderer = {
         type: "simple", // autocasts as new SimpleRenderer()
         symbol: symbol
-      };
-  
-  
-  
-        map.add(parcels_4pm);
+      }; 
+       
         map.add(parcels10_4pm);
-  
  
       });
