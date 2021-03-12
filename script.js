@@ -25,7 +25,7 @@ require([
         content: [{
           type: "fields",
           fieldInfos: [{
-            fieldName: "hour_of_day",
+            fieldName: "hour_of_da",
             label: "Hour of day: ",
             visible: true
           }, {
