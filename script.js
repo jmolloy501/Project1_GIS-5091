@@ -23,8 +23,8 @@ require([
   var template = {
         title: "Individuals in parcel: {number_peo}",
         content: [{
-         
-          fieldInfos: [{type: "fields",
+          type: "fields",
+          fieldInfos: [{
             fieldName: "hour_of_day",
             label: "Hour of day: ",
             visible: true
