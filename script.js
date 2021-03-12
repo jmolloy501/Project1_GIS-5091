@@ -24,8 +24,11 @@ require([
         title: "Individuals in parcel: {number_peo}",
         content: [{
          
-          type: "fields",
-          fieldInfos: [{
+          fieldInfos: [{type: "fields",
+            fieldName: "hour_of_day",
+            label: "Hour of day: ",
+            visible: true
+          }, {
             fieldName: "number_peo",
             label: "Unique pings: ",
             visible: true
